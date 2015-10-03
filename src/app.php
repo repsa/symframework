@@ -8,7 +8,7 @@ $routes->add('leap_year', new Routing\Route('/is_leap_year/{year}', array(
     '_controller' => 'Calendar\\Controller\\LeapYearController::indexAction',
 )));
 
-/*$routes->add('hello', new Routing\Route('/hello/{name}', array(
+$routes->add('hello', new Routing\Route('/hello/{name}', array(
     'name' => 'World',
     '_controller' => function ($request) {
         // $foo will be available in the template
@@ -21,6 +21,6 @@ $routes->add('leap_year', new Routing\Route('/is_leap_year/{year}', array(
 
         return $response;
     }
-)));*/
+)));
 
 return $routes;
