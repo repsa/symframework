@@ -16,11 +16,11 @@ $routes->add('hello', new Routing\Route('/hello/{name}', array(
     }
 )));
 
-$routes->add('bye', new Routing\Route('/bye', array(
+/*$routes->add('bye', new Routing\Route('/bye', array(
     '_controller' => function ($request) {
         $response = render_template($request);
         return $response;
     }
-)));
+)));*/
 
 return $routes;
